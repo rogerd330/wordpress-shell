@@ -1,4 +1,5 @@
 .idea
+.sass-cache
 _notes
 upgrade/*
 uploads/*
