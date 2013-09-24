@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <title><?php wp_title('|', true, 'right'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<?php echo get_template_directory_uri() ?>/assets/img/favicon.ico" type="image/x-icon" rel="icon">
+    <link href="<?php echo get_template_directory_uri() ?>/assets/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
 
   <?php wp_head(); ?>
 
