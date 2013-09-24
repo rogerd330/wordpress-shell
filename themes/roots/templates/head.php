@@ -12,5 +12,14 @@
 
   <?php wp_head(); ?>
 
+    <?php $the_page = get_page(get_the_ID()) ?>
+
+    <meta property="og:title" content="<?php echo $the_page->post_title ?>">
+    <meta property="og:site_name" content="<?php bloginfo('name') ?>">
+    <meta property="og:description" content="<?php bloginfo('description') ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php bloginfo('url') ?>">
+    <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/img/logo-opengraph.jpg">
+
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 </head>
